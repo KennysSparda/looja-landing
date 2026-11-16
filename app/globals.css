@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-archivo: "Archivo", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1b1410;
+}
+
+/* Forma de etiqueta: cantos arredondados + "furinho" no topo,
+   remete a etiqueta de validade/preço (identidade visual da LOOJA) */
+.tag-shape {
+  position: relative;
+  border-radius: 14px;
+}
+
+.tag-shape::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: inherit;
+  border: inherit;
+}
+
+.tag-hole {
+  position: absolute;
+  top: -3px;
+  left: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #ffffff;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #c2410c;
+  outline-offset: 3px;
+}
