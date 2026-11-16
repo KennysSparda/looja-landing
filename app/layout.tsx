@@ -22,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={archivo.variable}>
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

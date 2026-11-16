@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const links = [
   { label: "Recursos", href: "#recursos" },
   { label: "Como funciona", href: "#como-funciona" },
@@ -9,10 +11,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-line bg-white/90 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-tag bg-orange text-sm font-900 text-white">
-            L
-          </span>
-          <span className="text-lg font-800 tracking-tight text-ink">LOOJA</span>
+          <Image
+            src="/logo.png"
+            width={200}
+            height={40}
+            className="flex h-9 w-32 items-center justify-center rounded-tag text-sm font-900 text-white"
+            alt="logo image"
+          />
         </a>
 
         <ul className="hidden items-center gap-8 text-sm font-500 text-ink-soft md:flex">
@@ -27,7 +32,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#entrar"
+            href="https://app.looja.com.br"
             className="hidden text-sm font-600 text-ink-soft hover:text-ink sm:block"
           >
             Entrar
