@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="https://app.looja.com.br"
-            className="hidden text-sm font-600 text-ink-soft hover:text-ink sm:block"
+            className="text-sm font-600 text-ink-soft hover:text-ink sm:block"
           >
             Entrar
           </a>

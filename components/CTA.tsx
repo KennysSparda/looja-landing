@@ -16,7 +16,10 @@ export default function CTA() {
           </h2>
           <ul className="mt-6 space-y-2.5">
             {itens.map((item) => (
-              <li key={item} className="flex items-center gap-2.5 text-sm text-white/80">
+              <li
+                key={item}
+                className="flex items-center gap-2.5 text-sm text-white/80"
+              >
                 <IconCheck className="h-4 w-4 text-orange" />
                 {item}
               </li>
@@ -36,6 +39,12 @@ export default function CTA() {
             className="rounded-tag border border-white/25 px-7 py-3.5 text-center text-sm font-600 text-white hover:bg-white/10"
           >
             Falar com vendas
+          </a>
+          <a
+            href="https://app.looja.com.br"
+            className="rounded-tag border border-white/25 px-7 py-3.5 text-center text-sm font-600 text-white hover:bg-white/10"
+          >
+            Entrar
           </a>
         </div>
       </div>
